@@ -1,13 +1,12 @@
-import logo from './logo.svg';
 import './App.css';
-import FetchMoreRhymes from '/src/FetchMoreRhymes'
 import React from 'react';
+import fetchRhymes from './fetchRhymes';
 
 
 function App() {
   return (
     <div className="App">
-       <FetchMoreRhymes/>
+       <fetchRhymes/>
     </div>
   );
 }
