@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import Radio from '@mui/material/Radio';
 import RadioGroup from '@mui/material/RadioGroup';
 import FormControlLabel from '@mui/material/FormControlLabel';
@@ -13,7 +13,6 @@ export default function BackGround() {
         <FormControlLabel value="BackGround1" control={<Radio />} label="BackGround 1" />
         <FormControlLabel value="BackGround2" control={<Radio />} label="BackGround 2" />
         <FormControlLabel value="BackGround3" control={<Radio />} label="BackGround 3" />
-        
       </RadioGroup>
     </FormControl>
   );
