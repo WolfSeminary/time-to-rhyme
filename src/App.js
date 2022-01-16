@@ -6,7 +6,7 @@ import fetchRhymes from './fetchRhymes';
 function App() {
   return (
     <div className="App">
-       <fetchRhymes/>
+       <FetchMoreRhymes/>
     </div>
   );
 }
