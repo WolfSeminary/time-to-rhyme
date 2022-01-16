@@ -1,12 +1,15 @@
+import logo from './logo.svg';
 import './App.css';
-import React from 'react';
-import fetchRhymes from './fetchRhymes';
-
 
 function App() {
   return (
     <div className="App">
-       <FetchMoreRhymes/>
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload. Deploy-work!
+        </p>
+      </header>
     </div>
   );
 }
