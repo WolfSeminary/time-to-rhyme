@@ -9,9 +9,13 @@ const thank=()=>{
     shouldShowThankYouModal==true&&< ThankYouModal/>
   )
 } 
+function onPrintSongClick(){
+  setShouldShowThankYouModal(true);
+  window.print();
+}
   return (
     <Stack spacing={2} direction="row">
-      <Button variant="contained" onclick={thank}
+      <Button variant="contained" onchange={onPrintSongClick} onclick={thank}
     >Print Designed Song</Button>
     </Stack>
   );
