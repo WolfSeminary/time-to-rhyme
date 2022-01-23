@@ -15,7 +15,7 @@ export default function PrintSong() {
         >Print Designed Song</Button>
       </Stack>
       {
-        shouldShowThankYouModal ? <ThankYouModal setShouldShowThankYouModal={setShouldShowThankYouModal} /> : <></>
+        shouldShowThankYouModal&&<ThankYouModal setShouldShowThankYouModal={setShouldShowThankYouModal} />
       }
     </>
   )
