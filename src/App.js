@@ -1,12 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
-import ClearSong from './ClearSong'
-import React from 'react'
 
 function App() {
   return (
     <div className="App">
-     <ClearSong/>
+     <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload. Deploy-work!
+        </p>
+      </header>
     </div>
   );
 }
