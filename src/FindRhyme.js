@@ -1,7 +1,7 @@
 import React from 'react';
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
-import FetchRhymes from './FetchRhymes'
+import FetchRhymes from './FetchRhymes';
 
 export default function FindRhymeBtn() {
   return (
