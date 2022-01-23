@@ -10,7 +10,7 @@ const WriteSong = () => {
   }
   return (
     <>
-      <Box
+      <Box id="section-to-print"
         component="form"
         sx={{
           '& .MuiTextField-root': { m: 1, width: '35ch' },
