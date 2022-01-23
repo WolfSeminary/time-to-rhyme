@@ -1,4 +1,4 @@
-//import logo from './logo.svg';
+import logo from './logo.svg';
 import './App.css';
 import FetchMoreRhymes from './FetchMoreRhymes';
 
@@ -11,7 +11,7 @@ function App() {
           Edit <code>src/App.js</code> and save to reload. Deploy-work!
         </p>
       </header>
-    
+      
     </div>
   );
 }
