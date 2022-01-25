@@ -1,8 +1,13 @@
-import {TextField} from '@mui/material'
+import { TextField } from '@mui/material';
+import { useState } from 'react';
 
-const NumOfSyllables  = () => {
-    return(
-        <TextField id="outlined-basic" label="Number of Syllables" variant="outlined" />
+const NumOfSyllables = () => {
+    const [numOfSyllables, setNumOfSyllables] = useState(0)
+    const onNumOfSyllablesChange = (e) => {
+        setNumOfSyllables(e.target.value);
+    }
+    return (
+        <TextField onChange={e => onNumOfSyllablesChange(e)} id="outlined-basic" label="Number of Syllables" variant="outlined" />
     )
 }
-export default NumOfSyllables ;
+export default NumOfSyllables;
