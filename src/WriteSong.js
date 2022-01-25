@@ -34,8 +34,8 @@ const WriteSong = () => {
         />
       </Box>
       <div onClick={onClearSongClick}>
-        <ClearSong></ClearSong>
-        </div>
+        <ClearSong />
+      </div>
 
     </>
   )
