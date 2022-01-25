@@ -8,6 +8,9 @@ const WriteSong = () => {
   const onWriteSong = (params) => {
     setSong(params);
   }
+  onClearSongClick=()=>{
+    setSong('');
+  }
   return (
     <>
       <Box id="section-to-print"
