@@ -8,11 +8,13 @@ export default function FindRhyme() {
   const[rhymes,setRhymes]=useState();
   const FetchRhymes = () => {
   let word=wordToRhyme
-  setRhymes=fetch('https://rhymebrain.com/talk?function=getRhymes&word=' + word).then(res => res.json())
-  }
+  fetch('https://rhymebrain.com/talk?function=getRhymes&word=' + word)
+      .then(res => res.json())
+      .then(res => setRhymes(res.items))
   return (
     <Stack spacing={2} direction="row">
       <Button variant="contained">Find me a Rhyme</Button>
     </Stack>
   );
+}
 }
