@@ -3,7 +3,7 @@ import { useState } from 'react';
 import * as React from 'react';
 import Button from '@mui/material/Button';
 
-const FetchMoreRhymes=()=>{
+const FetchMoreRhymes=(props)=>{
 const[currentRhymesRange, setCurrentRhymesRange]=useState(0)
 
 function fetchRhymes(){
@@ -11,7 +11,7 @@ function fetchRhymes(){
  }
 return(
     <Button variant="contained" disableElevation>
-      Fetch more Rhymes
+      Fetch more Rhymes ({currentRhymesRange},{props.rhymes})
     </Button>
 )
 }
