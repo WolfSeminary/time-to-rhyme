@@ -12,7 +12,7 @@ export default function FindRhyme() {
       .then(res => res.json())
       .then(res => setRhymes(res.items))
   return (
-    <Stack spacing={2} direction="row">
+    <Stack onClick={FetchRhymes} spacing={2} direction="row">
       <Button variant="contained">Find me a Rhyme</Button>
     </Stack>
   );
