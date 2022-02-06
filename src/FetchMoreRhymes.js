@@ -15,4 +15,4 @@ return(
     </Button>
 )
 }
-export default FetchMoreRhymes
+export default FetchMoreRhymes;
