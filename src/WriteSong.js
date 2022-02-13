@@ -2,7 +2,7 @@
 
 import { Box, TextField } from '@mui/material';
 
-export default function WriteSong({ onChange }) {
+export default function WriteSong({ onChange,song }) {
   return (
     <Box id="section-to-print"
       component="form"

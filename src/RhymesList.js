@@ -42,7 +42,7 @@ export default function RhymesList({ arrOfRhymes }) {
                                             <ListItem>
                                                 <ListItemIcon></ListItemIcon>
                                                 <ListItemText
-                                                    primary={item}
+                                                    primary={item.word}
                                                     secondary={secondary ? 'Secondary text' : null}
                                                 />
                                                 <ListItemSecondaryAction>

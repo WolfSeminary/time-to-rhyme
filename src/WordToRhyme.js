@@ -14,4 +14,3 @@ export default function WordToRhyme({ onChange }) {
     </Box>
   )
 }
-export default WordToRhyme;

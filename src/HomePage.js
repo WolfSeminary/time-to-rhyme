@@ -1,10 +1,12 @@
 import RhymesList from "./RhymesList";
 import WordToRhyme from "./WordToRhyme";
-import FindRhyme from "./FetchRhymes";
+import FindRhyme from "./FindRhyme";
 import WriteSong from "./WriteSong";
 import NumOfSyllables from "./NumOfSyllables";
 import BackGround from "./BackGround";
 import PrintSong from "./PrintSong";
+import ClearSong from './ClearSong';
+import { useState } from "react";
 
 export default function HomePage() {
     const [wordToRhyme, setWordToRhyme] = useState();
@@ -35,7 +37,8 @@ export default function HomePage() {
         fetch('https://rhymebrain.com/talk?function=getRhymes&word=' + word)
             .then(res => res.json())
             .then(res => {
-                setRhymes(res.items);
+                console.log(res)
+                setRhymes(res);
                 setCurrentRhymesRange(10)
             })
     }
@@ -48,7 +51,7 @@ export default function HomePage() {
     return <div><RhymesList arrOfRhymes={rhymes} />
         <WordToRhyme onChange={onWordToRhymeChange} />
         <FindRhyme onClick={fetchRhymes} />
-        <WriteSong onChange={onWriteSong} />
+        <WriteSong onChange={onWriteSong} song={song} />
 
         <ClearSong onClick={onClearSongClick} />
         <NumOfSyllables onChange={onNumOfSyllablesChange} />
