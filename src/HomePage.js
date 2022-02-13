@@ -9,6 +9,7 @@ import ClearSong from './ClearSong';
 import { useState } from "react";
 
 export default function HomePage() {
+    const[backgrounds ,setBackgrounds ]=useState([{id:1,name:"Background A",URL:'../public/backgrounds/1.JPG'},{id:2,name:"Background B",URL:'../public/backgrounds/2.JPG'},{id:3,name:"Background C",URL:'../public/backgrounds/1.JPG'}]);
     const [wordToRhyme, setWordToRhyme] = useState();
     const [currentRhymesRange, setCurrentRhymesRange] = useState(0)
 
