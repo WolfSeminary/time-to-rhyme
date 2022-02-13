@@ -1,13 +1,10 @@
 import * as React from 'react';
-import Modal from '@mui/material/Modal';
-import Typography from '@mui/material/Typography';
-import Box from '@mui/material/Box';
+import { Box, Typography, Modal } from '@mui/material';
 
-const ThankYouModal = (props) => {
+
+const ThankYouModal = ({ onClose }) => {
     const rootRef = React.useRef(null);
-    const onCloseModal = () => {
-        props.setShouldShowThankYouModal(false);
-    }
+
     return (
         <Box
             sx={{
@@ -35,7 +32,7 @@ const ThankYouModal = (props) => {
                     justifyContent: 'center',
                 }}
                 container={() => rootRef.current}
-                onClose={onCloseModal}
+                onClose={onClose}
             >
                 <Box
                     sx={{
