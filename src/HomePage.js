@@ -7,6 +7,7 @@ import BackGround from "./BackGround";
 import PrintSong from "./PrintSong";
 import ClearSong from './ClearSong';
 import { useState } from "react";
+import AppBar from "./AppBar"
 
 export default function HomePage() {
     const [wordToRhyme, setWordToRhyme] = useState();
@@ -48,7 +49,9 @@ export default function HomePage() {
     const onWordToRhymeChange = (event) => {
         setWordToRhyme(event.target.value);
     }
-    return <div><RhymesList arrOfRhymes={rhymes} />
+    return <div>
+        <AppBar />
+        <RhymesList arrOfRhymes={rhymes} />
         <WordToRhyme onChange={onWordToRhymeChange} />
         <FindRhyme onClick={fetchRhymes} />
         <WriteSong onChange={onWriteSong} song={song} />
