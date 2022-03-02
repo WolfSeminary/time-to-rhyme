@@ -2,7 +2,7 @@ import { Button, Stack } from '@mui/material';
 import ThankYouModal from './ThankYouModal'
 
 export default function PrintSong({ onClick, open, onClose }) {
-  function onPrintSongClick() {
+function onPrintSongClick() {
     setShouldShowThankYouModal(true);
     window.print();
   }
